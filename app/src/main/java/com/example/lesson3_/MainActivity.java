@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if(savedInstanceState==null){
-            getFragmentManager().beginTransaction()
-                    .add(R.id.container, new CustomWebViewFragment())
-                    .commit();
+     /*   if(savedInstanceState==null){
+         //   getFragmentManager().beginTransaction()
+              //      .add(R.id.container, new CustomWebViewFragment())
+                 //   .commit();
 
-            }
+            }*/
         }
 
 
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                                 Bundle savedInstanceState) {
            View result=super.onCreateView(inflater, container,
                    savedInstanceState);
+
            getWebView().getSettings().setJavaScriptEnabled(true);
          getWebView().getSettings().setSupportZoom(true);
            getWebView().getSettings().setBuiltInZoomControls(true);

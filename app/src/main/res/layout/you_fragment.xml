@@ -4,6 +4,16 @@
     android:layout_height="match_parent">
 
 
-
+    <Button
+        android:id="@+id/downloadBut"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Загрузить"
+        />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/webYou"/>
 
 </LinearLayout>
